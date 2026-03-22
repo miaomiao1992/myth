@@ -1,0 +1,1 @@
+export function is_mobile_device() { return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent); }

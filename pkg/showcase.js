@@ -9,6 +9,8 @@ export function switch_preset(preset_idx) {
 export function wasm_main() {
     wasm.wasm_main();
 }
+import * as import1 from "./snippets/myth-engine-da9c06cb15c52053/inline0.js"
+import * as import2 from "./snippets/myth_app-4b93ea47b2ed880b/inline0.js"
 
 function __wbg_get_imports() {
     const import0 = {
@@ -862,6 +864,10 @@ function __wbg_get_imports() {
             const ret = arg0.querySelectorAll(getStringFromWasm0(arg1, arg2));
             return ret;
         }, arguments); },
+        __wbg_querySelector_46ff1b81410aebea: function() { return handleError(function (arg0, arg1, arg2) {
+            const ret = arg0.querySelector(getStringFromWasm0(arg1, arg2));
+            return isLikeNone(ret) ? 0 : addToExternrefTable0(ret);
+        }, arguments); },
         __wbg_queueMicrotask_0c399741342fb10f: function(arg0) {
             const ret = arg0.queueMicrotask;
             return ret;
@@ -1657,17 +1663,17 @@ function __wbg_get_imports() {
             arg0.writeTexture(arg1, arg2, arg3, arg4);
         }, arguments); },
         __wbindgen_cast_0000000000000001: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { dtor_idx: 2126, function: Function { arguments: [], shim_idx: 2127, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            // Cast intrinsic for `Closure(Closure { dtor_idx: 2127, function: Function { arguments: [], shim_idx: 2128, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
             const ret = makeMutClosure(arg0, arg1, wasm.wasm_bindgen__closure__destroy__hd0e8b8cc926265d1, wasm_bindgen__convert__closures_____invoke__h88e073df5ed39981);
             return ret;
         },
         __wbindgen_cast_0000000000000002: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { dtor_idx: 2768, function: Function { arguments: [Externref], shim_idx: 2769, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            // Cast intrinsic for `Closure(Closure { dtor_idx: 2771, function: Function { arguments: [Externref], shim_idx: 2772, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
             const ret = makeMutClosure(arg0, arg1, wasm.wasm_bindgen__closure__destroy__h520a7f74c1e80c29, wasm_bindgen__convert__closures_____invoke__h49fefd7c6807c76b);
             return ret;
         },
         __wbindgen_cast_0000000000000003: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { dtor_idx: 2787, function: Function { arguments: [Externref], shim_idx: 2788, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
+            // Cast intrinsic for `Closure(Closure { dtor_idx: 2790, function: Function { arguments: [Externref], shim_idx: 2791, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
             const ret = makeMutClosure(arg0, arg1, wasm.wasm_bindgen__closure__destroy__h79ed52bda423ba60, wasm_bindgen__convert__closures_____invoke__hb2a12f119a2a5f8f);
             return ret;
         },
@@ -1749,6 +1755,8 @@ function __wbg_get_imports() {
     return {
         __proto__: null,
         "./showcase_bg.js": import0,
+        "./snippets/myth-engine-da9c06cb15c52053/inline0.js": import1,
+        "./snippets/myth_app-4b93ea47b2ed880b/inline0.js": import2,
     };
 }
 
